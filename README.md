@@ -29,14 +29,15 @@ Por causa da dependência `codeworld-api`, é recomendado instalar via `cabal` (
 A ferramenta `cabal` é o sistema de pacotes padrão de Haskell. É muito fácil se
 perder ao usar ela, mas siga os passos que você vai se dar bem =).
 
-1. Siga a [documentação](https://cabal.readthedocs.io/en/stable/) e
-   instale, via GHCup, `cabal 3.10.1.0` ou maior.
-2. Clone esse repositório fazendo `git clone
-   https://github.com/Pedro-V/mapas-pf` (ou baixe o zip).
-3. Edite o seu código em `src/Main.hs`. Não se esqueça de importar as
-   bibliotecas necessárias.
-4. Teste com `cabal repl` ou `cabal run` (isso pode demorar). Não use somente o `ghci`,
-   pois não terá acesso aos módulos.
+Os passos abaixo assumem plataforma **Windows de 64 bits**. Também é necessário desativar
+alguns anti-vírus, em particular o **Avast**, que faz decisões erradas que
+invalidam o certificado usado na comunicação HTTPS.
+
+1. Instale o [`ghcup`](https://www.haskell.org/ghcup/). No processo, peça que o
+   `ghcup` instale `msys2` e `cabal`. Outras ferramentas são opcionais.
+2. Clone esse repositório fazendo `git clone https://github.com/Pedro-V/mapas-pf.git` (ou baixe o zip).
+3. Edite o seu código em `src/Main.hs`. Não se esqueça de importar as bibliotecas necessárias.
+4. Teste com `cabal repl` ou `cabal run`. Não use somente o `ghci`, pois não terá acesso aos módulos.
 
 ## Documentação da API pública
 
