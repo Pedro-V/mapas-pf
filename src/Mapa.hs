@@ -5,7 +5,7 @@ module Mapa (
 ) where
 
 import Data.List (intercalate)
-import Data.Text (pack)
+import Data.Text (pack, unpack, stripEnd)
 import Data.Maybe (catMaybes)
 import Text.Read (readMaybe)
 import CodeWorld
@@ -18,7 +18,7 @@ type Cidade = (Nome, Localizacao, Estradas)
 type Mapa = [Cidade]
 
 carregarMapa :: FilePath -> IO Mapa
-carregarMapa = fmap (catMaybes . map parseCSV . lines) . readFile
+carregarMapa = fmap (catMaybes . map parseCSV . lines . unpack . stripEnd . pack) . readFile
 
 salvarMapa :: FilePath -> Mapa -> IO ()
 salvarMapa fp = writeFile fp . unlines . map cityToCSV
