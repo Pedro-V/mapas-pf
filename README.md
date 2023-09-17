@@ -19,17 +19,17 @@ O módulo define tipos como `Cidade`, `Estradas` e `Mapa`, assim como:
 ## Instalação
 
 Por causa da dependência `codeworld-api`, é recomendado instalar via `cabal` (ou
-`stack`, se preferir)
+`stack`, se preferir).
 
 ### `cabal`
 
 A ferramenta `cabal` é o sistema de pacotes padrão de Haskell. É muito fácil se
-perder ao usar ela, mas siga os passos que você vai se dar bem =)
+perder ao usar ela, mas siga os passos que você vai se dar bem =).
 
 1. Siga a [documentação](https://cabal.readthedocs.io/en/stable/) e
    instale, via GHCup, `cabal 3.10.1.0` ou maior.
-2. Clone desse repositório fazendo `git clone
-   https://github.com/Pedro-V/mapas-pf` (ou baixe o zip)
+2. Clone esse repositório fazendo `git clone
+   https://github.com/Pedro-V/mapas-pf` (ou baixe o zip).
 3. Edite o seu código em `src/Main.hs`. Não se esqueça de importar as
    bibliotecas necessárias.
 4. Teste com `cabal repl` ou `cabal run` (isso pode demorar). Não use somente o `ghci`,
@@ -39,7 +39,7 @@ perder ao usar ela, mas siga os passos que você vai se dar bem =)
 
 **API pública** é o conjunto de elementos que um módulo exporta: tipos,
 funções, constantes, etc. Como a nossa é minúscula, ela é capaz de ser descrita no
-README. **Lembre de incluir `import Mapa` no começo do seu código`.
+README. **Lembre de incluir `import Mapa` no começo do seu código**.
 
 ### `Mapa`, `Cidade`, `Estradas` e outros tipos
 
@@ -85,11 +85,9 @@ novoMarioWorld = (adicionarCidade "Wario" -100.3 0.0 . removerCidade "Luigi") ma
 salvarMapa "teste.mapa" novoMarioWorld
 ```
 
----
-
 ### `desenharCidade :: Cidade -> Picture`
 
-- Desenha uma cidade (no caso, uma simples bola) em sua `Localizacao` no plano
+- Desenha uma cidade (no momento, uma simples bola) em sua `Localizacao` no plano
   cartesiano.
 
 ### `desenharEstrada :: Cidade -> Cidade -> Picture`
