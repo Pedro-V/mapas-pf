@@ -1,8 +1,8 @@
 cabal-version:   3.0
-name:            mapas-ufs
+name:            mapas-pf
 version:         0.1.0.0
-synopsis:           Um módulo educacional para construção de mapas.
-category:           Educacional
+synopsis:        Um módulo educacional para construção de mapas.
+category:        Educacional
 license:         GPL-2.0-or-later
 license-file:    LICENSE
 author:          mingas62@hotmail.com

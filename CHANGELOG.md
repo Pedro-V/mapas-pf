@@ -1,4 +1,4 @@
-# Revision history for mapas-ufs
+# Revision history for mapas-pf
 
 ## 0.1.0.0 -- YYYY-mm-dd
 

@@ -25,12 +25,12 @@ perder ao usar ela, mas siga os passos que você vai se dar bem =)
 
 1. Siga a [documentação](https://cabal.readthedocs.io/en/stable/) e o
 instale via GHCup. Recomendo instalar a versão `3.10.1.0` ou maior.
-2. Crie uma pasta/diretório. Nesse caso eu chamei ela de `projeto-mapas`
-3. Vá para `projeto-mapas` e execute `cabal init -m -n`
-4. O arquivo `projeto-mapas.cabal` será criado. Edite-o para ficar assim:
+2. Clone (ou baixe o zip) desse repositório fazendo `git clone
+   https://github.com/Pedro-V/mapas-pf`
+3. O diretório `mapas-pf` será criado. Edite o arquivo `mapas-pf.cabal` para ficar assim:
 ```cabal
 cabal-version:   3.0
-name:            teste
+name:            mapas
 version:         0.1.0.0
 license:         NONE
 build-type:      Simple
@@ -38,21 +38,20 @@ build-type:      Simple
 common warnings
     ghc-options: -Wall
 
-executable teste
+executable maps
     import:           warnings
     main-is:          Main.hs
     build-depends:
         base ^>=4.16.4.0,
         text ^>=1.2.5.0,
         codeworld-api ^>=0.8.1,
-        mapas-ufs ^>= 0.1.0.0
     hs-source-dirs:   app
     default-language: Haskell2010
 ```
-5. Edite o seu código que estará em `app/Main.hs`. Não se esqueça de importar as
+4. Edite o seu código em `src/Main.hs`. Não se esqueça de importar as
    bibliotecas necessárias.
-6. Teste com `cabal repl` ou `cabal run`. Não use somente o `ghci`, pois não
-   terá acesso aos módulos.
+6. Teste com `cabal repl` ou `cabal run` (isso pode demorar). Não use somente o `ghci`,
+   pois não terá acesso aos módulos.
 
 ## Documentação da API pública
 
