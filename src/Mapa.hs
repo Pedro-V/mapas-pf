@@ -23,7 +23,6 @@ carregarMapa = fmap (catMaybes . map parseCSV . lines . unpack . stripEnd . pack
 salvarMapa :: FilePath -> Mapa -> IO ()
 salvarMapa fp = writeFile fp . unlines . map cityToCSV
     where 
-      cityToCSV :: Cidade -> String
       cityToCSV (n, (x, y), es) = intercalate "," [n, show x, show y, unwords es]
 
 -- desenho de mapas
