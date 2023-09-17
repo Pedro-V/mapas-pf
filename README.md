@@ -1,6 +1,9 @@
 # Mapas
 
-Um módulo educacional para programação funcional.
+<p align=center><b>Um módulo educacional para programação funcional.</b></p>
+
+![](https://lh6.googleusercontent.com/-ALu5A2WI7SI/TsZRjZXiVLI/AAAAAAAADSI/ue4GLJqFVkA/s1600/Koenig.jpg)
+
 
 ## Descrição
 
@@ -11,7 +14,7 @@ O módulo define tipos como `Cidade`, `Estradas` e `Mapa`, assim como:
 
 - funções de IO para os mapas, representados por arquivos com a extensão `.mapa`
 - funções de desenho de cidades, estradas e mapas, usando `CodeWorld` como API
-  de desenho
+  para os desenhos
 
 ## Instalação
 
@@ -23,34 +26,13 @@ Por causa da dependência `codeworld-api`, é recomendado instalar via `cabal` (
 A ferramenta `cabal` é o sistema de pacotes padrão de Haskell. É muito fácil se
 perder ao usar ela, mas siga os passos que você vai se dar bem =)
 
-1. Siga a [documentação](https://cabal.readthedocs.io/en/stable/) e o
-instale via GHCup. Recomendo instalar a versão `3.10.1.0` ou maior.
-2. Clone (ou baixe o zip) desse repositório fazendo `git clone
-   https://github.com/Pedro-V/mapas-pf`
-3. O diretório `mapas-pf` será criado. Edite o arquivo `mapas-pf.cabal` para ficar assim:
-```cabal
-cabal-version:   3.0
-name:            mapas
-version:         0.1.0.0
-license:         NONE
-build-type:      Simple
-
-common warnings
-    ghc-options: -Wall
-
-executable maps
-    import:           warnings
-    main-is:          Main.hs
-    build-depends:
-        base ^>=4.16.4.0,
-        text ^>=1.2.5.0,
-        codeworld-api ^>=0.8.1,
-    hs-source-dirs:   app
-    default-language: Haskell2010
-```
-4. Edite o seu código em `src/Main.hs`. Não se esqueça de importar as
+1. Siga a [documentação](https://cabal.readthedocs.io/en/stable/) e
+   instale, via GHCup, `cabal 3.10.1.0` ou maior.
+2. Clone desse repositório fazendo `git clone
+   https://github.com/Pedro-V/mapas-pf` (ou baixe o zip)
+3. Edite o seu código em `src/Main.hs`. Não se esqueça de importar as
    bibliotecas necessárias.
-6. Teste com `cabal repl` ou `cabal run` (isso pode demorar). Não use somente o `ghci`,
+4. Teste com `cabal repl` ou `cabal run` (isso pode demorar). Não use somente o `ghci`,
    pois não terá acesso aos módulos.
 
 ## Documentação da API pública
@@ -127,3 +109,8 @@ main = drawingOf $ desenharMapa marioWorld
   where
     marioWorld <- carregarMapa "teste.mapa"
 ```
+
+<figure>
+    <img src="./teste.png" align=center>
+    <figcaption align=center>Mario World</figcaption>
+</figure>

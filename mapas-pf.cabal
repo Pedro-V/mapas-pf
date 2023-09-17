@@ -12,23 +12,15 @@ extra-doc-files: CHANGELOG.md, README.md, teste.mapa
 
 common standard
     default-language: Haskell2010
-    ghc-options: -Wall -threaded
+    ghc-options:      -Wall -threaded
     hs-source-dirs:   src
-    build-depends:
-        base ^>=4.16.4.0,
-        text ^>=1.2.5.0,
-        codeworld-api ^>=0.8.1
+    build-depends:    base ^>=4.16.4.0, text ^>=1.2.5.0, codeworld-api ^>=0.8.1
 
 library
     import:           standard
     exposed-modules:  Mapa
-    build-depends:
-        base ^>=4.16.4.0,
-        text ^>=1.2.5.0,
-        codeworld-api ^>=0.8.1
 
 executable mapas
     import:           standard
     other-modules:    Mapa
-    -- se você mudar o nome do arquivo principal, reflita a mudança aqui
     main-is:          Main.hs
