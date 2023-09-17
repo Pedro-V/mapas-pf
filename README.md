@@ -1,8 +1,11 @@
 # Mapas
 
-<p align=center><b>Um módulo educacional para programação funcional.</b></p>
-
-![](https://lh6.googleusercontent.com/-ALu5A2WI7SI/TsZRjZXiVLI/AAAAAAAADSI/ue4GLJqFVkA/s1600/Koenig.jpg)
+<p align="center">
+    <b>Um módulo educacional para programação funcional</b>
+    <a href="https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg">
+        <img src="https://lh6.googleusercontent.com/-ALu5A2WI7SI/TsZRjZXiVLI/AAAAAAAADSI/ue4GLJqFVkA/s1600/Koenig.jpg">
+    </a>
+</p>
 
 
 ## Descrição
@@ -63,8 +66,9 @@ orlaFraca = ("Maceió", (7, 12.5), ["Aracaju"])
 nordesteParcial :: Mapa
 nordesteParcial = [meuPais, cidadeFrevo, orlaFraca]
 
+-- veja que Recife-Aracaju-Maceió formam uma rota
 rota :: Estradas
-rota = [cidadeFrevo, meuPais, orlaFraca]
+rota = ["Recife", "Aracaju", "Maceió"]
 ```
 
 ### `carregarMapa :: FilePath -> IO Mapa`
@@ -103,12 +107,13 @@ import CodeWorld
 import Mapa
 
 main :: IO ()
+-- funcoes que geram Picture devem ser desenhadas com drawingOf
 main = drawingOf $ desenharMapa marioWorld
   where
     marioWorld <- carregarMapa "teste.mapa"
 ```
 
-<figure>
-    <img src="./teste.png" align=center>
-    <figcaption align=center>Mario World</figcaption>
-</figure>
+<p align="center">
+    <img src="./teste.png"> <br/>
+    Mario World
+</p>
