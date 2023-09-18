@@ -38,6 +38,9 @@ invalidam o certificado usado na comunicação HTTPS.
 2. Clone esse repositório fazendo `git clone https://github.com/Pedro-V/mapas-pf.git` (ou baixe o zip).
 3. Edite o seu código em `src/Main.hs`. Não se esqueça de importar as bibliotecas necessárias.
 4. Teste com `cabal repl` ou `cabal run`. Não use somente o `ghci`, pois não terá acesso aos módulos.
+   Talvez seja necessário permitir conexão do binário compilado com um socket do computador.
+
+Esse passo-a-passo está disponível em [vídeo](https://drive.google.com/file/d/1bg2mHIvO7FntLZL903xP6PRHazzbVnwX/view?usp=sharing)
 
 ## Documentação da API pública
 
