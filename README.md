@@ -1,10 +1,10 @@
-# Mapas
+<h1 align="center">Mapas</h1>
 
 <p align="center">
-    <b>Um módulo educacional para programação funcional</b>
-    <a href="https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg">
-        <img src="https://lh6.googleusercontent.com/-ALu5A2WI7SI/TsZRjZXiVLI/AAAAAAAADSI/ue4GLJqFVkA/s1600/Koenig.jpg">
-    </a>
+<b>Um módulo educacional para programação funcional</b>
+<a href="https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg">
+<img src="https://lh6.googleusercontent.com/-ALu5A2WI7SI/TsZRjZXiVLI/AAAAAAAADSI/ue4GLJqFVkA/s1600/Koenig.jpg">
+</a>
 </p>
 
 
@@ -17,12 +17,12 @@ O módulo define tipos como `Cidade`, `Estradas` e `Mapa`, assim como:
 
 - funções de IO para os mapas, representados por arquivos com a extensão `.mapa`
 - funções de desenho de cidades, estradas e mapas, usando `CodeWorld` como API
-  para os desenhos
+para os desenhos
 
 ## Instalação
 
 Por causa da dependência `codeworld-api`, é recomendado instalar via `cabal` (ou
-`stack`, se preferir).
+        `stack`, se preferir).
 
 ### `cabal`
 
@@ -34,11 +34,11 @@ alguns anti-vírus, em particular o **Avast**, que faz decisões erradas que
 invalidam o certificado usado na comunicação HTTPS.
 
 1. Instale o [`ghcup`](https://www.haskell.org/ghcup/). No processo, peça que o
-   `ghcup` instale `msys2` e `cabal`. Outras ferramentas são opcionais.
+`ghcup` instale `msys2` e `cabal`. Outras ferramentas são opcionais.
 2. Clone esse repositório fazendo `git clone https://github.com/Pedro-V/mapas-pf.git` (ou baixe o zip).
 3. Edite o seu código em `src/Main.hs`. Não se esqueça de importar as bibliotecas necessárias.
 4. Teste com `cabal repl` ou `cabal run`. Não use somente o `ghci`, pois não terá acesso aos módulos.
-   Talvez seja necessário permitir conexão do binário compilado com um socket do computador.
+Talvez seja necessário permitir conexão do binário compilado com um socket do computador.
 
 Esse passo-a-passo está disponível em [vídeo](https://drive.google.com/file/d/1bg2mHIvO7FntLZL903xP6PRHazzbVnwX/view?usp=sharing)
 
